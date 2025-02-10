@@ -26,6 +26,20 @@ footer {
   font-size: 5px;
   font-weight: bold;
 }
+@keyframes icons-move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer-icons__img {
   width: 30px;
+}
+.footer-icons:hover .footer-icons__img {
+  animation: 1.5s icons-move;
 }
